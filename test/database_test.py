@@ -34,7 +34,7 @@ from unittest import TestCase, TestSuite, TextTestRunner
 
 from autolab_core import RigidTransform, YamlConfig
 
-from perception import CameraIntrinsics, RenderMode
+from autolab_core import CameraIntrinsics, RenderMode
 
 from meshpy.obj_file import ObjFile
 from meshpy.mesh_renderer import ViewsphereDiscretizer, VirtualCamera

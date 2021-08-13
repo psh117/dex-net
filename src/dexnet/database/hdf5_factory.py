@@ -34,7 +34,7 @@ import meshpy.sdf as sdf
 import meshpy.stable_pose as stp
 
 from autolab_core import RigidTransform
-from perception import BinaryImage, ColorImage, DepthImage, ObjectRender, RenderMode
+from autolab_core import BinaryImage, ColorImage, DepthImage, ObjectRender, RenderMode
 import perception as f
 
 from dexnet.database.keys import *

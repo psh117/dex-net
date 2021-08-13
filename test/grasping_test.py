@@ -33,7 +33,7 @@ import time
 from unittest import TestCase, TestSuite, TextTestRunner
 
 from autolab_core import RigidTransform, YamlConfig
-from perception import CameraIntrinsics
+from autolab_core import CameraIntrinsics
 
 from dexnet.grasping import Contact3D, ParallelJawPtGrasp3D, GraspableObject3D, UniformGraspSampler, AntipodalGraspSampler, GraspQualityConfigFactory, GraspQualityFunctionFactory, RobotGripper, PointGraspMetrics3D
 

@@ -37,7 +37,7 @@ setup(name='dex-net',
       author='Jeff Mahler',
       author_email='jmahler@berkeley.edu',
       package_dir = {'': 'src'},
-      packages=['dexnet'],
+      packages=['dexnet', 'dexnet.database', 'dexnet.grasping', 'dexnet.learning', 'dexnet.visualization'],
       install_requires=requirements,
       test_suite='test'
      )

@@ -48,7 +48,7 @@ import meshpy.sdf_file as sdf_file
 import meshpy.stp_file as stp_file
 from meshpy import UrdfWriter
 
-from perception import RenderMode
+from meshpy.render_modes import RenderMode
 
 import IPython
 

@@ -140,18 +140,18 @@ class DexNet_cli(object):
         self.display_welcome()
 
     def display_welcome(self):
-        print '####################################################'
-        print 'DEX-NET 0.1 Command Line Interface'
-        print 'Brought to you by AutoLab, UC Berkeley'
-        print '####################################################'
-        print
+        print('####################################################')
+        print('DEX-NET 0.1 Command Line Interface')
+        print('Brought to you by AutoLab, UC Berkeley')
+        print('####################################################')
+        print()
 
     def display_menu(self):
-        print
-        print 'AVAILABLE COMMANDS:'
+        print()
+        print('AVAILABLE COMMANDS:')
         for command_id, command_desc in DexNet_cli.API.iteritems():
-            print '%d) %s' %(command_id, command_desc[0])
-        print
+            print('%d) %s' %(command_id, command_desc[0]))
+        print()
 
     def run_user_command(self):
         command = raw_input('Enter a numeric command: ')
@@ -166,9 +166,9 @@ class DexNet_cli(object):
             self.comp.set_words([])
             return command_fn()
         except RuntimeError:
-            print 'Command %s not recognized, please try again' %(command)
+            print('Command %s not recognized, please try again' %(command))
         except Exception as e:
-            print 'Error occurred!'
+            print('Error occurred!')
             self.close()
             raise
         return True
@@ -188,11 +188,11 @@ class DexNet_cli(object):
         return in_name
     
     def _get_fixed_input(self, valid_inputs, what_to_get):
-        print
-        print 'Available values:'
+        print()
+        print('Available values:')
         for key in valid_inputs:
-            if key is not '': print key
-        print
+            if key is not '': print (key)
+        print()
         self.comp.set_words(valid_inputs)
         return self._get_checked_input(lambda x: x in valid_inputs, what_to_get)
     
@@ -247,8 +247,8 @@ class DexNet_cli(object):
         existing_datasets = [d.name for d in self.dexnet_api.database.datasets]
         print('Existing datasets:')
         for dataset_name in existing_datasets:
-            print dataset_name
-        print
+            print (dataset_name)
+        print()
         # dexnet entity tab completion
         self.comp.set_words(existing_datasets)
         
@@ -260,7 +260,7 @@ class DexNet_cli(object):
         try:
             self.dexnet_api.open_dataset(dataset_name)
             print('Opened dataset {}'.format(dataset_name))
-            print
+            print()
         except Exception as e:
             print("Opening dataset failed: {}".format(str(e)))
         return True
@@ -425,7 +425,7 @@ class DexNet_cli(object):
         return True
         
     def close(self):
-        print 'Closing Dex-Net. Goodbye!'
+        print('Closing Dex-Net. Goodbye!')
         self.dexnet_api.close_database()
         return False
 

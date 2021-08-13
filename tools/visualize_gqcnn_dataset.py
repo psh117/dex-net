@@ -36,7 +36,7 @@ import sys
 
 import autolab_core.utils as utils
 from autolab_core import Point, YamlConfig
-from perception import BinaryImage, ColorImage, DepthImage, GdImage, GrayscaleImage, RgbdImage, RenderMode
+from autolab_core import BinaryImage, ColorImage, DepthImage, GdImage, GrayscaleImage, RgbdImage, RenderMode
 
 from gqcnn import Grasp2D
 from gqcnn import Visualizer as vis2d

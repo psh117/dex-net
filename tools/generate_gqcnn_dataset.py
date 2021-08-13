@@ -56,7 +56,7 @@ import autolab_core.utils as utils
 from gqcnn import Grasp2D
 from gqcnn import Visualizer as vis2d
 from meshpy import ObjFile, RenderMode, SceneObject, UniformPlanarWorksurfaceImageRandomVariable
-from perception import CameraIntrinsics, BinaryImage, DepthImage
+from autolab_core import CameraIntrinsics, BinaryImage, DepthImage
 
 from dexnet.constants import READ_ONLY_ACCESS
 from dexnet.database import Hdf5Database

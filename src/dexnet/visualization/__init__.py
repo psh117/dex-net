@@ -19,7 +19,7 @@ PURPOSE. THE SOFTWARE AND ACCOMPANYING DOCUMENTATION, IF ANY, PROVIDED
 HEREUNDER IS PROVIDED "AS IS". REGENTS HAS NO OBLIGATION TO PROVIDE
 MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 """
-from visualizer2d import DexNetVisualizer2D
-from visualizer3d import DexNetVisualizer3D
+from .visualizer2d import DexNetVisualizer2D
+from .visualizer3d import DexNetVisualizer3D
 
 __all__ = ['DexNetVisualizer2D', 'DexNetVisualizer3D']

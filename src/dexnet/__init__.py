@@ -19,6 +19,6 @@ PURPOSE. THE SOFTWARE AND ACCOMPANYING DOCUMENTATION, IF ANY, PROVIDED
 HEREUNDER IS PROVIDED "AS IS". REGENTS HAS NO OBLIGATION TO PROVIDE
 MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 """
-from constants import *
-from abstractstatic import abstractstatic
-from api import DexNet
+from .constants import *
+from .abstractstatic import abstractstatic
+from .api import DexNet
